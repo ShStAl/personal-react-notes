@@ -1,0 +1,10 @@
+:root {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #495057;
+  background-color: #ffffff;
+
+  -webkit-font-smoothing: antialiased;
+}

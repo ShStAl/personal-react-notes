@@ -1,0 +1,125 @@
+#root {
+  padding: 50px 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0 10px 20px 10px;
+}
+
+.noteForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px;
+  padding: 10px;
+}
+
+.noteTitleAndText {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.noteTitle {
+  background-color: whitesmoke;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.noteText {
+  background-color: whitesmoke;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+  resize: vertical;
+}
+
+.btnAdd {
+  margin-top: 10px;
+  text-align: center;
+  color: #495057;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: 3px 0 0 0;
+  background-color: whitesmoke;
+  transition: 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btnAdd:hover {
+  color: #00c16d;
+}
+
+.btnAdd:active {
+  background-color: #a4c3b2;
+  border: 2px solid #a4c3b2;
+}
+
+.notesContainer {
+  margin: 20px 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 15px 20px 5px 20px;
+  border-radius: 5px;
+  background-color: #fae588;
+  color: #495057;
+  word-wrap: break-word;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.noteBody {
+  padding-bottom: 30px;
+}
+
+.noteBody:hover {
+  cursor: pointer;
+}
+
+.noteDate {
+  font-size: 14px;
+  margin: 0px 0px 5px 0px;
+}
+
+.btnDel {
+  border: 2px solid #fae588;
+  border-radius: 5px;
+  padding: 0;
+  background-color: #fae588;
+  transition: 0.2s;
+  width: 100%;
+  color: #495057;
+}
+
+.btnDel:hover {
+  color:#fe6d73;
+}
+
+.btnDel:active {
+  color:#b21e35;
+}
+
+.modalBody {
+  word-wrap: break-word;
+}
