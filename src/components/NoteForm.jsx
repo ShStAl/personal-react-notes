@@ -13,13 +13,13 @@ export default function NoteForm({ onAction, modalNote = {head: '', text: ''}, m
         }
 
         if (modalStyle) {
-            modalNote.head = title;
-            modalNote.text = note;
-            modalNote.updatedDate = moment().format("MMM Do h:mm A");
-            
+            if (modalNote.head != title || modalNote.text != note) {
+                modalNote.head = title;
+                modalNote.text = note;
+                modalNote.updatedDate = moment().format("MMM Do h:mm A");
+            }
             onAction(modalNote);
         } else {
-
             const newNote = {
                 id: moment().format('X'),
                 head: title,

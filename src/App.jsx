@@ -42,7 +42,6 @@ function App() {
       setNotes([]);
       localStorage.setItem('notes', JSON.stringify([]));
     }
-    
   }
 
   const handleShowModal = (note) => {
