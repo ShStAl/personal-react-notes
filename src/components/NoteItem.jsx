@@ -12,9 +12,9 @@ export default function NoteItem({ note, onDelete, openModal }) {
         <p>{note.text}</p>
       </div>
       <div className="noteBottom">
-        <p className="noteDate">{note.createdDate}</p>
+        <p className="noteDate">{note.createdDate}<br />{note.updatedDate && `Updated ${note.updatedDate}`}</p>
         <button className="btnDel" onClick={handleDelete}>
-          <span className="material-symbols-outlined">delete_forever</span>
+          <span className="material-symbols-outlined">delete</span>
         </button>
       </div>
     </div>

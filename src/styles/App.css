@@ -1,5 +1,5 @@
 #root {
-  padding: 50px 100px;
+  padding: 50px 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ h1 {
 .noteForm {
   display: flex;
   flex-direction: column;
-  margin: 0 80px;
+  margin: 0;
   padding: 10px;
 }
 
@@ -43,6 +43,7 @@ h1 {
   font-family: inherit;
   border-radius: 5px;
   outline: none;
+  min-height: 60px;
   resize: vertical;
 }
 
@@ -54,7 +55,7 @@ h1 {
   border-radius: 5px;
   padding: 3px 0 0 0;
   background-color: whitesmoke;
-  transition: 0.2s;
+  transition: 0.15s;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -63,8 +64,40 @@ h1 {
 }
 
 .btnAdd:active {
-  background-color: #a4c3b2;
-  border: 2px solid #a4c3b2;
+  color: white;
+}
+
+.modal-content {
+  background-color: whitesmoke;
+}
+
+.modal-body {
+  padding-bottom: 0;
+}
+
+.modalStyleForm {
+  margin: 0;
+  padding: 0;
+}
+
+.modalStyleTitleAndText {
+  border: none;
+  box-shadow: none;
+}
+
+.modalStyleTitle {
+  padding: 0;
+}
+
+.modalStyleText {
+  padding: 20px 0 0 0;
+}
+
+.modalStyleBtn {
+  box-shadow: none;
+  border-top: solid 1px #DFE2E6;
+  padding: 10px 0 5px 0;
+  margin: 0;
 }
 
 .notesContainer {
@@ -120,6 +153,31 @@ h1 {
   color:#b21e35;
 }
 
+.modalTitle {
+  margin: 0;
+}
+
 .modalBody {
   word-wrap: break-word;
+}
+
+.deleteAllBtnOff {
+  display: none;
+}
+
+.deleteAllBtnOn {
+  display: block;
+  background-color: white;
+  margin-top: 60px;
+  transition: 0.2s;
+  border: none;
+  color: #495057;
+}
+
+.deleteAllBtnOn:hover {
+  color:#fe6d73;
+}
+
+.deleteAllBtnOn:active {
+  color:#b21e35;
 }

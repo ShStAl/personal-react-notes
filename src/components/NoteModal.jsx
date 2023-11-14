@@ -1,16 +1,26 @@
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import NoteForm from './NoteForm';
 
-export default function NoteModal({ show, handleClose, modalInfo }) {
-    
-    return (
-      <>  
-        <Modal show={show} onHide={handleClose} centered>
-          <Modal.Header closeButton>
-            <Modal.Title>{modalInfo.head}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body className="modalBody">{modalInfo.text}</Modal.Body>
-        </Modal>
-      </>
-    );  
+export default function NoteModal({ show, handleClose, modalNote, onSaveNote}) {
+
+  return (
+    <>
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <p className='modalTitle'>
+            Created: {modalNote.createdDate}
+            <br />{modalNote.updatedDate && `Updated: ${modalNote.updatedDate}`}
+          </p>
+        </Modal.Header>
+        <Modal.Body className="modalBody">
+          <NoteForm
+            modalStyle={true}
+            modalNote={modalNote}
+            onAction={onSaveNote}
+            buttonText={<span className="material-symbols-outlined">save</span>}
+          />
+        </Modal.Body>
+      </Modal>
+    </>
+  );
 }
