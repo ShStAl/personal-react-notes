@@ -181,3 +181,16 @@ h1 {
 .deleteAllBtnOn:active {
   color:#b21e35;
 }
+
+
+@media all and (max-width: 950px) {
+  #root {
+    padding: 50px 100px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  #root {
+    padding: 50px 50px;
+  }
+}
