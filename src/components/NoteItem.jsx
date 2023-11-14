@@ -1,7 +1,7 @@
 export default function NoteItem({ note, onDelete, openModal }) {
 
   const handleDelete = () => {
-    const confirmDelete = window.confirm('Are you sure you want to delete your note?');
+    const confirmDelete = confirm('Are you sure you want to delete your note?');
     if (confirmDelete) {onDelete(note);}
   };
 

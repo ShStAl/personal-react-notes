@@ -69,7 +69,8 @@ function App() {
       <NoteModal show={showModal} handleClose={handleCloseModal} modalNote={selectedNote} onSaveNote={updateNote}/>
       <button onClick={deleteAllNotes} 
       className={`${notes.length > 1 ? 'deleteAllBtnOn' : 'deleteAllBtnOff'}`}>
-        <span className="material-symbols-outlined">delete_forever</span></button>
+        <span className="material-symbols-outlined">delete_forever</span><br /><span>Delete all</span></button>
+      
     </>
   );
 }
